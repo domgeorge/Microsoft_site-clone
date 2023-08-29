@@ -1,0 +1,52 @@
+.carousel {
+  position: relative;
+  &-item {
+    height: 45rem;
+    margin-bottom: 8rem;
+
+    &:hover {
+      .carousel-control {
+        background-color: $color-fade;
+        box-shadow: 0 0.1rem 1.5rem $color-grey-dark;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &-caption {
+    position: absolute;
+    right: 0;
+    left: 7%;
+    bottom: 20%;
+    padding-right: 6rem;
+    text-align: left;
+    width: 50%;
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+
+  &-control {
+    display: inline-block;
+    width: max-content;
+    padding: 2rem;
+    border-radius: 50%;
+    height: max-content;
+    position: absolute;
+    top: 40%;
+    transition: 0.1s ease-in-out 0.05s;
+
+    &:hover {
+      background-color: $color-fade;
+      box-shadow: 0 0.1rem 1.5rem $color-grey-dark;
+      opacity: 0.8;
+    }
+
+    &-prev {
+      margin-left: 0.5rem;
+    }
+
+    &-next {
+      margin-left: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  left: 37%;
+  bottom: 82%;
+}
+
+@mixin gridset {    
+  @include clearfix;
+  color: $color-black;
+  width: 100%;
+}
+
+@mixin gridbox {
+  display: block;
+  float: left;
+  width: 32rem; //width: 28rem;
+  color: $color-black;
+
+  &:not(:last-child) {
+    margin-right: 8.2rem; //margin-right: 8.3rem;
+    }
+}
+
+@mixin flexbox {
+  display: flex;
+  flex-direction: row;
+}

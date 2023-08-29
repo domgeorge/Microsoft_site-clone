@@ -1,0 +1,37 @@
+.sm {
+    @include flexbox;
+    padding: 3rem 0;
+        
+    &-caption {
+        display: inline-block;
+    }
+
+    &_box {
+        margin-left: 1rem;
+        @include flexbox;
+
+        &-icons {
+            display: inline-block;
+            position: relative;
+
+            & > .fa {
+
+                &-solid {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                &-dove {
+                    left: 3.5rem;
+                }
+
+                &-envelope {
+                    left: 7rem;
+                }
+           }
+
+        }
+    }
+}
+

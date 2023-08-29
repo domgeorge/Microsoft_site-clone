@@ -1,0 +1,48 @@
+.carousel {
+    position: relative;
+    &-inner {
+        width: 100%;
+    }
+    &-item {
+      height: 45rem;
+      margin-bottom: 8rem; 
+    
+    }
+      &-item:hover &-control {
+        background-color: #f0efef;
+        box-shadow: 0 0.1rem 1.5rem #777;
+        opacity: 0.8; }
+    &-caption {
+      position: absolute;
+      right: 0;
+      left: 7%;
+      bottom: 20%;
+      padding-right: 6rem;
+      text-align: left;
+      width: 50%;
+      font-size: 1.4rem;
+      color: #fff; }
+    &-control {
+      display: inline-block;
+      width: max-content;
+      padding: 2rem;
+      border-radius: 50%;
+      height: max-content;
+      position: absolute;
+      top: 40%;
+      transition: 0.1s ease-in-out 0.05s; 
+    
+        &:hover {
+            background-color: #f0efef;
+            box-shadow: 0 0.1rem 1.5rem #777;
+            opacity: 0.8; }
+
+        &-prev {
+            margin-left: 0.5rem; }
+        &-next {
+            margin-left: 0.5rem; }
+
+    }
+      
+      
+}

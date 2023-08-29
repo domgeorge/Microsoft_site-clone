@@ -1,0 +1,11 @@
+.advert {
+  margin: 3rem 0; //margin-top: 2rem;
+
+  &_flex {
+    @include gridset;
+
+    &-box {
+      @include gridbox;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.navigation {
+  //padding: 1.5rem;
+  display: flex;
+  position: relative;
+
+  &_logo-box {
+    padding: 1.4rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  &_list {
+    display: inline-flex;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &_item {
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 1.8rem;
+
+    &:nth-child(7) {
+      margin-right: 30rem;
+    }
+
+    &-dropdown {
+      &:active,
+      &:focus {
+        background-color: rgb(240, 239, 239);
+        transition: 4s ease-in-out;
+      }
+    }
+  }
+
+  &_click {
+    transition: 0.07s ease-in-out;
+    padding-bottom: $small;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-dark;
+
+      &:hover {
+        border-bottom: $normal1;
+      }
+    }
+  }
+
+  &_dropdown {
+    margin-right: 0.5rem;
+    transition: 0.1s ease-out;
+    z-index: 1000;
+
+    &-box {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: $color-fade;
+      color: $color-black;
+      top: 6rem;
+      left: 0;
+      z-index: 12000;
+      @include clearfix;
+      
+      &--list {
+        display: block;
+        width: 100%;
+        @include clearfix;
+        list-style: none;
+        padding: 3rem;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-item {
+
+      &--float {
+        float: left;
+        line-height: 3;
+        padding-right: 5.5rem;
+
+        h1 {
+          padding-bottom: 2rem;
+        }
+      }
+
+      &--bottom {
+        display: block;
+        width: 100%;
+        padding: .5rem; 
+        padding-top: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $color-fadedark;
+        border-bottom: .3rem solid black;
+
+        h1 {
+          font-weight: 400;
+        }
+      }
+
+      & > h1 {
+        font-size: 1.6rem;
+      }
+
+      & > ul > li{
+        font-size: 1.6rem;
+        list-style: none;
+      }
+    }
+  }
+
+  &_icon {
+    font-size: 2rem;
+    padding: 1.4rem;
+    //margin-left: 2rem;
+  }  
+}
+
+.show {
+  display:block;
+}

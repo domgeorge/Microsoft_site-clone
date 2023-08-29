@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is for the entire layout
+  font-size: 55%;  //62.5% //1rem = 10px; 10px/16px = 62.5%  1rem = 8.8px =; 8.8/16px = 55%
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-white;
+}
+
+main {
+  padding: 0 6.4rem;
+  background-color: inherit;
+}
+
+ul {
+  padding-left: 0;
+}

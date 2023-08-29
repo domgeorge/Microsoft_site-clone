@@ -1,0 +1,18 @@
+.prebiz {
+  height: max-content;  //52rem
+  position: relative;
+  color: $color-black;
+  //padding-top: 7rem;
+  margin-bottom: 2rem;  //9rem
+
+  &_img {
+    width: 100%;
+  }
+
+  &_content {
+    position: absolute;
+    top: 20.8rem;
+    left: 7.5rem;
+    width: 50%;
+  }
+}
