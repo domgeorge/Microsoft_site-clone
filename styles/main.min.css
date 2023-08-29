@@ -375,6 +375,10 @@ h2 {
 .advert_flex-box:not(:last-child) {
   margin-right: 8.2rem;
 }
+.advert_flex-box > .advert_img {
+  max-width: 100%;
+  height: auto;
+}
 
 .ard {
   width: 100%;

@@ -746,7 +746,7 @@ function myFunction() {
   }
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// Close the dropdown menu if the user clicks anywhere on the window outside the button
 window.onclick = function(event) {
   if (!event.target.matches('.navigation_click')) {
     var dropdowns = document.getElementsByClassName("navigation_dropdown-box");
@@ -757,6 +757,15 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }
     }
+
+    const element = document.querySelector('.navigation_item-dropdown');
+    const currentBgcolor = element.style.backgroundColor;
+    const targetBgColor = 'rgb(240, 239, 239)';
+
+    if (currentBgcolor == targetBgColor) {
+      element.style.backgroundColor = '';
+    }
+
   }
 }
     </script>
