@@ -21,6 +21,11 @@
       margin: 0 auto;
 
       @include gridbox;
+
+      & > .biz_img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
