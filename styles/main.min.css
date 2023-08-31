@@ -24,6 +24,11 @@ ul {
   padding-left: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 0 1.5rem;
+  }
+}
 body {
   font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -33,18 +38,18 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .btn {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -607,11 +612,42 @@ h2 {
   font-size: 2rem;
   padding: 1.4rem;
 }
+.navigation_icon-bars {
+  display: none;
+}
 
 .show {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation_logo-box {
+    margin: 0 auto;
+  }
+  .navigation_logo-box img {
+    width: 12rem;
+  }
+  .navigation_nav {
+    display: none;
+  }
+  .navigation_icon {
+    position: absolute;
+    padding: 1rem 0.5rem;
+  }
+  .navigation_icon-bars {
+    display: block;
+    left: 0;
+  }
+  .navigation_icon-search {
+    left: 4rem;
+  }
+  .navigation_icon-shop {
+    right: 5rem;
+  }
+  .navigation_icon-user {
+    right: 0;
+  }
+}
 .carousel {
   position: relative;
 }

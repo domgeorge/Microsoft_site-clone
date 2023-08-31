@@ -126,10 +126,53 @@
   &_icon {
     font-size: 2rem;
     padding: 1.4rem;
-    //margin-left: 2rem;
+
+    &-bars {
+      display: none;
+    }
   }  
 }
 
 .show {
   display:block;
+}
+
+//Media Query for 768px screens
+@media only screen and (max-width: 768px) {
+  .navigation {
+
+    &_logo-box {
+      margin: 0 auto;
+
+      & img {
+        width: 12rem;
+      }
+    }
+
+    &_nav {
+      display: none;
+    }
+
+    &_icon {
+      position: absolute;
+      padding: 1rem 0.5rem;
+
+      &-bars {
+        display: block;
+        left: 0;
+      }
+
+      &-search {
+        left: 4rem;
+      }
+
+      &-shop {
+        right: 5rem;
+      }
+
+      &-user {
+        right: 0;
+      }
+    }
+  }
 }
