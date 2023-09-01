@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -160,30 +157,19 @@
 
 <!--Carousel for cards-->
 
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="img/ms-header1-1259.jpg"
               class="d-block w-100"
-              alt="header1"
-            />
+              alt="header1"/>
             <div class="carousel-caption d-none d-md-block">
               <h1 class="heading-primary u-margin-bottom-medium">
                 Surface Pro 8
@@ -212,8 +198,7 @@
             <img
               src="img/ms-header-2-1259.jpg"
               class="d-block w-100"
-              alt="header2"
-            />
+              alt="header2"/>
             <div class="carousel-caption d-none d-md-block">
               <h1 class="heading-primary u-margin-bottom-medium">
                 Take charge in the new year with Microsoft 365
@@ -234,24 +219,17 @@
           </div>
         </div>
 
-        <button
-          class="carousel-control carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
+        <a class="carousel-control carousel-control-prev"
+          href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control carousel-control-next"
+          href="#myCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
 
 <!--Section_plugin-->
@@ -518,29 +496,19 @@
 
 <!-- LAST CAROUSEL-->
 
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
+      <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel1" data-slide-to="1"></li>
+        </ol>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               src="img/ms-theater1-1259.jpg"
               class="d-block w-100"
-              alt="theater1"
+              alt="First slide"
             />
             <div class="carousel-caption d-none d-md-block">
               <h1 class="heading-primary u-margin-bottom-medium">
@@ -564,7 +532,7 @@
             <img
               src="img/ms-theater2-1259.jpg"
               class="d-block w-100"
-              alt="theater2"
+              alt="Second slide"
             />
             <div class="carousel-caption d-none d-md-block">
               <h1 class="heading-primary u-margin-bottom-medium">
@@ -586,24 +554,18 @@
           </div>
         </div>
 
-        <button
-          class="carousel-control carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <a class="carousel-control carousel-control-prev"
+        href="#myCarousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control carousel-control-next"
+        href="#myCarousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
       </div>
 
 <!--Section_social-media-->
@@ -721,10 +683,17 @@
       </div>
     </footer>
 
-    <script>
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+      crossorigin="anonymous">
     </script>
 
     <script>
